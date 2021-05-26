@@ -6,12 +6,12 @@ An app where you can find all the resources you need, also evaluates  if you hav
 **Gives you a probablistic answer whather or not you hav COVID**
 * [x]  Install: Material Ui, Axios, sass , framer motion recharts ,sass
 * [x]  Create the layout of folders
-* [ ]  Make the basic template for page
-    * [ ]  make question card 
-* [ ]  Fill them with hard coded questioner
-* [ ]  Add functionality
-  * [ ]  change card contends on selecting the answer
-  * [ ]  Show a graph at the end to give you the probability
+* [x]  Make the basic template for page
+    * [x]  make question card 
+* [x]  Fill them with hard coded questioner
+* [x]  Add functionality
+  * [x]  change card contends on selecting the answer
+  * [x]  Show a graph at the end to give you the probability
 * [ ]  Add animation
 
 ## Page2: Covid Info

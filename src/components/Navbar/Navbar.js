@@ -23,7 +23,7 @@ export default function ButtonAppBar({ name = 'Go Covid' }) {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position='static'>
+			<AppBar color='transparent' elevation={0} position='static'>
 				<Toolbar>
 					<IconButton
 						edge='start'
