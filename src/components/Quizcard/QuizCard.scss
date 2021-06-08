@@ -21,5 +21,8 @@
 		background: wheat;
 		border-radius: 25px;
 		text-align: center;
+		&:hover {
+			background: rgb(223, 64, 64);
+		}
 	}
 }

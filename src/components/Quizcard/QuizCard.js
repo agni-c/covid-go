@@ -2,6 +2,7 @@ import './QuizCard.scss';
 import { questions } from './seed';
 import useQuiz from './useQuiz';
 import { ResponsiveContainer, PieChart, Pie, Tooltip, Cell } from 'recharts';
+
 const QuizCard = () => {
 	const {
 		quizData,
@@ -22,7 +23,7 @@ const QuizCard = () => {
 						<PieChart width={400} height={400}>
 							<Pie
 								dataKey='value'
-								isAnimationActive={false}
+								isAnimationActive={true}
 								data={processChartData(quizScore, quizData.length)}
 								cx='50%'
 								cy='50%'
@@ -41,6 +42,12 @@ const QuizCard = () => {
 					</ResponsiveContainer>
 
 					<h4>you got {getPercent(quizScore, quizData.length)}%</h4>
+					<h4>
+						{getPercent(quizScore, quizData.length) > 40
+							? 'Please Do A checkup'
+							: "Stay Safe And Don't forget to ware proper safety precautions"}
+					</h4>
+					{/* <h4>you got {percent}%</h4> */}
 				</div>
 			) : (
 				<div className='quiz-container'>

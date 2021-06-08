@@ -12,7 +12,8 @@ An app where you can find all the resources you need, also evaluates  if you hav
 * [x]  Add functionality
   * [x]  change card contends on selecting the answer
   * [x]  Show a graph at the end to give you the probability
-* [ ]  Add animation
+  * [x]  Add animation to recharts
+* [ ]  Have  some css touchups
 
 ## Page2: Covid Info
 ****

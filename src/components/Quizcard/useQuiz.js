@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { PieChart, Pie } from 'recharts';
 
 const UseQuiz = (questions = {}) => {
 	const [quizData, setQuizData] = useState(questions);
@@ -13,18 +12,24 @@ const UseQuiz = (questions = {}) => {
 		nextQuiz < quizData.length ? setQuestionNo(nextQuiz) : setIsQuizEnd(true);
 	};
 
-	const COLORS = ['#FFBB28', '#FF8042'];
-	const getPercent = (score, tot) => (score / tot) * 100;
+	const COLORS = ['#FF8042', '#FFBB28'];
+	const getPercent = (score, tot) => {
+		let temp = (score / tot) * 100;
+
+		return temp;
+	};
 
 	const processChartData = (score, tot) => {
+		const percentage = getPercent(score, tot);
+		console.log(percentage);
 		const data = [
 			{
-				name: 'Probability: Sick',
-				value: getPercent(score, tot),
+				name: 'Sick',
+				value: percentage || 0,
 			},
 			{
-				name: 'Probability: Healthy',
-				value: 100 - getPercent(score, tot),
+				name: 'Healthy',
+				value: 100 - percentage || 0,
 			},
 		];
 		return data;
