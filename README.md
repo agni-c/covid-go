@@ -18,6 +18,10 @@ An app where you can find all the resources you need, also evaluates  if you hav
 ## Page2: Covid Info
 ****
 **Show Covid related Info relevent to your locality**
+ - [x] Create Tabs ui
+ - [ ] Create UI for covid Info
+ - [x] enable tabs functionality
+ - [ ] Enable covid ui functionality
 
 ## page3: Lead Aggregation
 ****

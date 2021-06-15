@@ -41,7 +41,10 @@ const QuizCard = () => {
 						</PieChart>
 					</ResponsiveContainer>
 
-					<h4>you got {getPercent(quizScore, quizData.length)}%</h4>
+					<h4>
+						Probability of having COVID {getPercent(quizScore, quizData.length)}
+						%
+					</h4>
 					<h4>
 						{getPercent(quizScore, quizData.length) > 40
 							? 'Please Do A checkup'

@@ -1,40 +1,119 @@
 const questions = [
 	{
-		questionText: 'What is the capital of France?',
+		questionText: 'Have you received a COVID-19 vaccine?',
 		answerOptions: [
-			{ answerText: 'New York', isCorrect: false },
-			{ answerText: 'London', isCorrect: false },
-			{ answerText: 'Paris', isCorrect: true },
-			{ answerText: 'Dublin', isCorrect: false },
+			{ answerText: 'Yes', isCorrect: false },
+			{ answerText: 'No', isCorrect: true },
+		],
+	},
+
+	{
+		questionText: 'Do you have a fever, or have you felt feverish recently?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
 		],
 	},
 	{
-		questionText: 'Who is CEO of Tesla?',
+		questionText: 'Do you have a cough?',
 		answerOptions: [
-			{ answerText: 'Jeff Bezos', isCorrect: false },
-			{ answerText: 'Elon Musk', isCorrect: true },
-			{ answerText: 'Bill Gates', isCorrect: false },
-			{ answerText: 'Tony Stark', isCorrect: false },
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
 		],
 	},
 	{
-		questionText: 'The iPhone was created by which company?',
+		questionText:
+			'Are you having shortness of breath or any difficulty breathing?',
 		answerOptions: [
-			{ answerText: 'Apple', isCorrect: true },
-			{ answerText: 'Intel', isCorrect: false },
-			{ answerText: 'Amazon', isCorrect: false },
-			{ answerText: 'Microsoft', isCorrect: false },
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
 		],
 	},
 	{
-		questionText: 'How many Harry Potter books are there?',
+		questionText: 'Do you have chills or repeated shaking with chills?',
 		answerOptions: [
-			{ answerText: '1', isCorrect: false },
-			{ answerText: '4', isCorrect: false },
-			{ answerText: '6', isCorrect: false },
-			{ answerText: '7', isCorrect: true },
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Do you have any muscle pain or body aches?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Do you have any recent onset of headache or sore throat?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Have you been experiencing nausea and/or vomiting?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Do you have any recent loss of taste or smell?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Have you been experiencing fatigue recently?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Have you experienced any recent GI upset or diarrhea?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText:
+			'Have you been advised to self-quarantine because of exposure to someone with COVID-19?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText:
+			'Have you traveled in the past 14 days to any regions affected by COVID-19',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Had you been tested positive for COVID-19?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Have you been diagnosed with COVID-19?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
+		],
+	},
+	{
+		questionText: 'Are you over the age of 65?',
+		answerOptions: [
+			{ answerText: 'Yes', isCorrect: true },
+			{ answerText: 'No', isCorrect: false },
 		],
 	},
 ];
-
 export { questions };
