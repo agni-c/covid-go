@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -33,6 +34,8 @@ const useStyles = makeStyles(theme => ({
 	},
 	drawerPaper: {
 		width: drawerWidth,
+		backgroundColor: '#3f51b5',
+		color: 'white',
 	},
 	drawerContainer: {
 		overflow: 'auto',
@@ -40,6 +43,7 @@ const useStyles = makeStyles(theme => ({
 	content: {
 		flexGrow: 1,
 		padding: theme.spacing(3),
+		color: '#a4b2ff',
 	},
 	active: {
 		backgroundColor: 'red',
@@ -94,7 +98,7 @@ const ClippedDrawer = ({ children }) => {
 								to={path}
 								button
 								key={text}>
-								<ListItemIcon>{icon}</ListItemIcon>
+								<ListItemIcon style={{ color: 'white' }}>{icon}</ListItemIcon>
 								<ListItemText primary={text} />
 							</ListItem>
 						))}

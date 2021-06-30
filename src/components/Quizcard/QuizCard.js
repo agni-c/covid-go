@@ -1,4 +1,5 @@
 import './QuizCard.scss';
+import React from 'react';
 import { questions } from './seed';
 import useQuiz from './useQuiz';
 import { ResponsiveContainer, PieChart, Pie, Tooltip, Cell } from 'recharts';
@@ -16,7 +17,7 @@ const QuizCard = () => {
 	} = useQuiz(questions);
 
 	return (
-		<>
+		<React.Fragment>
 			{isQuizEnd ? (
 				<div className='quiz-container'>
 					<ResponsiveContainer width='100%' height='50%'>
@@ -70,7 +71,7 @@ const QuizCard = () => {
 					</div>
 				</div>
 			)}
-		</>
+		</React.Fragment>
 	);
 };
 

@@ -15,11 +15,11 @@ const useStyles = makeStyles({
 const Evaluation = () => {
 	const classes = useStyles();
 	return (
-		<>
+		<React.Fragment>
 			<div className={classes.container}>
 				<QuizCard />
 			</div>
-		</>
+		</React.Fragment>
 	);
 };
 
