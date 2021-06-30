@@ -31,9 +31,9 @@ const StatGraph = ({ data }) => (
 			<YAxis />
 			<Tooltip />
 			<Legend />
-			<Bar dataKey='active' fill='#8884d8' />
-			<Bar dataKey='confirmed' fill='#82ca9d' />
-			<Bar dataKey='recovered' fill='#82ca9d' />
+			<Bar dataKey='active' fill='#B7B200' />
+			<Bar dataKey='confirmed' fill=' #FF0000' />
+			<Bar dataKey='recovered' fill='#65FF43 ' />
 		</BarChart>
 	</ResponsiveContainer>
 );
@@ -106,7 +106,7 @@ const Stat = () => {
 				{districtData.length > 0 ? (
 					districtData.map(data => <StatGraph data={[data]} />)
 				) : (
-					<h1>No data to vusialize</h1>
+					<h1>Select Your State</h1>
 				)}
 			</div>
 		</div>

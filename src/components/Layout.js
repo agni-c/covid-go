@@ -19,6 +19,7 @@ import {
 	InfoOutlined,
 } from '@material-ui/icons';
 import { Link, useHistory, useLocation } from 'react-router-dom';
+import Logo from '../img/Logo_2.png';
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -48,6 +49,10 @@ const useStyles = makeStyles(theme => ({
 	active: {
 		backgroundColor: 'red',
 	},
+	title: {
+		display: 'flex',
+		alignItems: 'center',
+	},
 }));
 
 const ClippedDrawer = ({ children }) => {
@@ -60,14 +65,14 @@ const ClippedDrawer = ({ children }) => {
 	}, [location.pathname]);
 
 	const menuList = [
-		{ text: 'Evaluation', icon: <HomeOutlined />, path: '/' },
+		{ text: 'Evaluator', icon: <HomeOutlined />, path: '/' },
 		{
-			text: 'Covid Analytics',
+			text: 'Covid Infographics',
 			icon: <HomeOutlined />,
 			path: '/covid-overview',
 		},
 		{
-			text: 'Covid Oxigen Leads',
+			text: ' Lead Aggregation',
 			icon: <HomeOutlined />,
 			path: '/lead-aggregation',
 		},
@@ -78,7 +83,13 @@ const ClippedDrawer = ({ children }) => {
 			<AppBar position='fixed' className={classes.appBar}>
 				<Toolbar>
 					<Typography variant='h6' noWrap>
-						Lucky Draw
+						<div className={classes.title}>
+							<img id='logo' src={Logo} alt='COVID GO' />{' '}
+							<span style={{ padding: '0 10px', fontSize: '30px' }}>
+								{' '}
+								COVID GO{' '}
+							</span>
+						</div>
 					</Typography>
 				</Toolbar>
 			</AppBar>
