@@ -1,0 +1,9 @@
+.stat-main {
+	width: 100%;
+	min-height: calc(100vh - 100px);
+}
+.chart-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 20px;
+}
