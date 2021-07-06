@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Layout from './components/Layout.js';
 import virusImg from './img/covid19-1600x900_adobespark.png';

@@ -7,7 +7,7 @@ import axios from 'axios';
 import VaccineCenterCard from '../../components/cowin/VaccineCenterCard';
 
 mapboxgl.accessToken =
-	'pk.eyJ1IjoiYWduaS1jIiwiYSI6ImNrOGQzemsxNTBiNGUzZ295ZmNtNGM5YzIifQ.8TAputoYxQD7Y_B710gzIA';
+	'pk.eyJ1IjoiYWduaS1jIiwiYSI6ImNrcXJlcTd1ajB3dzUyb28xdWo5ems5M2EifQ.TF-znWiQx1RYqn7bRMxEPQ';
 // mapboxgl.accessToken = process.env.REACT_APP_MAP_BOX_KEY;
 
 const useStyles = makeStyles({
