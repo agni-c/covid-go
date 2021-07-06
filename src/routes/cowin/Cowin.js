@@ -2,7 +2,9 @@ import React, { useEffect, useState, useRef } from 'react';
 import './cowin.scss';
 import { makeStyles } from '@material-ui/core/styles';
 
-import mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import mapboxgl from '!mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
+
 import axios from 'axios';
 import VaccineCenterCard from '../../components/cowin/VaccineCenterCard';
 
