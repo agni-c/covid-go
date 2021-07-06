@@ -1,0 +1,27 @@
+.map-container {
+	height: 70vh;
+	width: 100%;
+}
+
+.sidebar {
+	background-color: rgba(35, 55, 75, 0.9);
+	color: #ffffff;
+	padding: 6px 12px;
+	font-family: monospace;
+	z-index: 1;
+	position: absolute;
+	top: 34px;
+	left: 0;
+	margin: 12px;
+	border-radius: 4px;
+	font-size: 21px;
+	/* padding: 11px; */
+}
+.vaccineCardDeck {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.2em;
+	height: 100%;
+	margin-top: 20px;
+}

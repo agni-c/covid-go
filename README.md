@@ -25,5 +25,15 @@ An app where you can find all the resources you need, also evaluates  if you hav
 
 ## page3: Lead Aggregation
 ****
-**Will crowd source leads and Sort out the most useful once useing filtering and upvotes**
+**Get the vaccine : map based**
+ - [x]  Setup the map
+ - [x]  Add pin to the place from where you want to get vaccine info 
+ - [ ]  fetch the setu api 
+ - [ ]  render the data in cards
+ - [ ]  save up the some places for demo lol
+**Get the vaccine : pin based**
+- [ ] setup a form to take the pin
+- [ ] call setu api with the pin
+- [ ] save some dummy data fro presentation
+- [ ] render the data in cards
 
