@@ -13,9 +13,9 @@ const App = () => {
 		<Router>
 			<Switch>
 				<Layout>
-					<Route exact path='/' component={Evaluation} />
+					<Route exact path='/eval' component={Evaluation} />
 					<Route exact path='/covid-overview' component={Stat} />
-					<Route exact path='/lead-aggregation' component={Cowin} />
+					<Route exact path='/' component={Cowin} />
 					<span className='virus'>
 						{imgArr.map(img => {
 							return <img src={img} alt='' />;

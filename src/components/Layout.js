@@ -65,17 +65,17 @@ const ClippedDrawer = ({ children }) => {
 	}, [location.pathname]);
 
 	const menuList = [
-		{ text: 'Evaluator', icon: <HomeOutlined />, path: '/' },
+		{
+			text: ' Lead Aggregation',
+			icon: <HomeOutlined />,
+			path: '/',
+		},
 		{
 			text: 'Covid Infographics',
 			icon: <HomeOutlined />,
 			path: '/covid-overview',
 		},
-		{
-			text: ' Lead Aggregation',
-			icon: <HomeOutlined />,
-			path: '/lead-aggregation',
-		},
+		{ text: 'Evaluator', icon: <HomeOutlined />, path: '/eval' },
 	];
 	return (
 		<div className={classes.root}>
