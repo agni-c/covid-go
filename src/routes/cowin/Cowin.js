@@ -8,9 +8,9 @@ import mapboxgl from '!mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');
 import axios from 'axios';
 import VaccineCenterCard from '../../components/cowin/VaccineCenterCard';
 
-mapboxgl.accessToken =
-	'pk.eyJ1IjoiYWduaS1jIiwiYSI6ImNrcXJlcTd1ajB3dzUyb28xdWo5ems5M2EifQ.TF-znWiQx1RYqn7bRMxEPQ';
-// mapboxgl.accessToken = process.env.REACT_APP_MAP_BOX_KEY;
+// mapboxgl.accessToken =
+// 	'pk.eyJ1IjoiYWduaS1jIiwiYSI6ImNrcXJlcTd1ajB3dzUyb28xdWo5ems5M2EifQ.TF-znWiQx1RYqn7bRMxEPQ';
+mapboxgl.accessToken = process.env.REACT_APP_MAP_BOX_KEY;
 
 const useStyles = makeStyles({
 	container: {
